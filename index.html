@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Papa Gallo Boutique — Lexington, Virginia</title>
+  <meta name="description" content="Papa Gallo is a beloved women's clothing boutique in Lexington, Virginia. Personal attention, curated brands, and a shopping experience unlike any other." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Papa Gallo — Home">
+        <img src="images/logo/papagallo-logo.jpeg" alt="Papa Gallo" />
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">Our Story</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#clothing">Clothing</a></li>
+        <li><a href="#brands">Brands</a></li>
+        <li><a href="#visit">Visit Us</a></li>
+      </ul>
+
+      <div class="nav-social">
+        <!-- Instagram -->
+        <a href="https://instagram.com/papagalloboutique" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5"/>
+            <circle cx="12" cy="12" r="5"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+          </svg>
+        </a>
+        <!-- Facebook -->
+        <a href="https://facebook.com/papagalloboutique" target="_blank" rel="noopener" aria-label="Facebook" class="social-icon-link">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+          </svg>
+        </a>
+      </div>
+
+      <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+
+  <!-- ═══════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════ -->
+  <section id="hero" class="hero">
+    <div class="hero-bg"></div>
+
+    <div class="hero-content">
+      <span class="hero-eyebrow">Lexington, Virginia &nbsp;·&nbsp; Women's Boutique</span>
+      <h1 class="hero-title">
+        <span class="hero-title-top">Papa</span>
+        <span class="hero-title-main">Gallo</span>
+      </h1>
+      <p class="hero-tagline">Where every visit feels like coming home.</p>
+      <a href="#visit" class="btn btn-hero">Visit Us</a>
+    </div>
+
+    <!-- REPLACE: add a portrait/store photo to images/gallery/hero.jpg -->
+    <div class="hero-image">
+      <div class="hero-image-frame">
+        <img src="images/gallery/hero.jpg" alt="Inside Papa Gallo Boutique"
+             onerror="this.style.display='none'" loading="eager" />
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <span class="hero-scroll-text">Scroll</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       MARQUEE STRIP
+  ═══════════════════════════════════════ -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-content">
+      <span>Lexington, Virginia</span><span class="marquee-sep">✦</span>
+      <span>Women's Boutique</span><span class="marquee-sep">✦</span>
+      <span>Clothing &amp; Accessories</span><span class="marquee-sep">✦</span>
+      <span>Family Friendly</span><span class="marquee-sep">✦</span>
+      <span>Local &amp; Loved</span><span class="marquee-sep">✦</span>
+      <span>Curated Brands</span><span class="marquee-sep">✦</span>
+      <!-- duplicate for seamless loop -->
+      <span>Lexington, Virginia</span><span class="marquee-sep">✦</span>
+      <span>Women's Boutique</span><span class="marquee-sep">✦</span>
+      <span>Clothing &amp; Accessories</span><span class="marquee-sep">✦</span>
+      <span>Family Friendly</span><span class="marquee-sep">✦</span>
+      <span>Local &amp; Loved</span><span class="marquee-sep">✦</span>
+      <span>Curated Brands</span><span class="marquee-sep">✦</span>
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════
+       ABOUT — OUR STORY
+  ═══════════════════════════════════════ -->
+  <section id="about" class="about">
+    <div class="about-container">
+
+      <div class="about-image-wrap reveal">
+        <div class="about-deco-circle"></div>
+        <!-- REPLACE: add owner photo to images/owner/owner.jpg -->
+        <img src="images/owner/owner.jpg" alt="The owner of Papa Gallo Boutique"
+             class="about-img" onerror="this.style.display='none'" loading="lazy" />
+        <div class="about-img-placeholder" aria-hidden="true"></div>
+      </div>
+
+      <div class="about-content">
+        <span class="section-label reveal">Our Story</span>
+        <h2 class="reveal reveal--delay-1">Meet the Heart <br>Behind the <em>Boutique</em></h2>
+
+        <!-- REPLACE: swap in the real owner story below -->
+        <p class="about-text reveal reveal--delay-2">
+          [Owner Name] has always believed that getting dressed should feel like a celebration.
+          What started as a lifelong passion for fashion and community became Papa Gallo — a place
+          where every woman who walks through the door is treated like family.
+        </p>
+        <p class="about-text reveal reveal--delay-2">
+          Tucked in the heart of Lexington, Virginia, Papa Gallo has become a beloved destination
+          for locals and visitors alike. Every piece is hand-picked with love, chosen because it
+          makes the women who wear it feel confident, beautiful, and completely themselves.
+        </p>
+
+        <p class="about-signature reveal reveal--delay-3">— [Owner Name]</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       GALLERY — ZOOM PARALLAX
+       Equivalent to ZoomParallax (framer-motion)
+       implemented in pure CSS + JS scroll handler.
+       7 images at different positions, each scaling
+       at a different rate as the user scrolls.
+  ═══════════════════════════════════════ -->
+  <section id="gallery" class="gallery">
+
+    <div class="gallery-header">
+      <span class="section-label reveal">Gallery</span>
+      <h2 class="reveal reveal--delay-1">A Glimpse <em>Inside</em></h2>
+      <p class="gallery-hint reveal reveal--delay-2">Scroll to explore</p>
+    </div>
+
+    <!--
+      REPLACE IMAGES: swap the Unsplash src URLs below with real store photos.
+      Drop files into images/gallery/ and update src to e.g. src="images/gallery/store-1.jpg"
+      You can use up to 7 images (pi-0 through pi-6). Remove unused .parallax-item blocks.
+    -->
+    <div class="parallax-wrap" id="parallaxSection">
+      <div class="parallax-sticky">
+
+        <!-- Image 0 — CENTER, scale 1 → 4 -->
+        <div class="parallax-item" data-max-scale="4">
+          <div class="pi pi-0">
+            <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=900&h=700&fit=crop&auto=format&q=80"
+                 alt="Inside Papa Gallo Boutique" loading="lazy" />
+          </div>
+        </div>
+
+        <!-- Image 1 — UPPER RIGHT, scale 1 → 5 -->
+        <div class="parallax-item" data-max-scale="5">
+          <div class="pi pi-1">
+            <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=900&h=700&fit=crop&auto=format&q=80"
+                 alt="Clothing selection at Papa Gallo" loading="lazy" />
+          </div>
+        </div>
+
+        <!-- Image 2 — UPPER LEFT, scale 1 → 6 -->
+        <div class="parallax-item" data-max-scale="6">
+          <div class="pi pi-2">
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=900&h=700&fit=crop&auto=format&q=80"
+                 alt="Shopping at Papa Gallo" loading="lazy" />
+          </div>
+        </div>
+
+        <!-- Image 3 — CENTER RIGHT, scale 1 → 5 -->
+        <div class="parallax-item" data-max-scale="5">
+          <div class="pi pi-3">
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=900&h=700&fit=crop&auto=format&q=80"
+                 alt="Fashion at Papa Gallo" loading="lazy" />
+          </div>
+        </div>
+
+        <!-- Image 4 — LOWER RIGHT, scale 1 → 6 -->
+        <div class="parallax-item" data-max-scale="6">
+          <div class="pi pi-4">
+            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=900&h=700&fit=crop&auto=format&q=80"
+                 alt="Papa Gallo store interior" loading="lazy" />
+          </div>
+        </div>
+
+        <!-- Image 5 — LOWER LEFT, scale 1 → 8 -->
+        <div class="parallax-item" data-max-scale="8">
+          <div class="pi pi-5">
+            <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=900&h=700&fit=crop&auto=format&q=80"
+                 alt="Women's fashion at Papa Gallo" loading="lazy" />
+          </div>
+        </div>
+
+        <!-- Image 6 — LOWER RIGHT SMALL, scale 1 → 9 -->
+        <div class="parallax-item" data-max-scale="9">
+          <div class="pi pi-6">
+            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=900&h=700&fit=crop&auto=format&q=80"
+                 alt="Papa Gallo boutique details" loading="lazy" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile fallback: simple 2-column grid, shown only on small screens -->
+    <div class="gallery-mobile">
+      <div class="gallery-mobile-img">
+        <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=600&h=400&fit=crop&auto=format&q=75" alt="Papa Gallo Boutique" loading="lazy" />
+      </div>
+      <div class="gallery-mobile-img">
+        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600&h=400&fit=crop&auto=format&q=75" alt="Shopping at Papa Gallo" loading="lazy" />
+      </div>
+      <div class="gallery-mobile-img">
+        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=400&fit=crop&auto=format&q=75" alt="Papa Gallo store interior" loading="lazy" />
+      </div>
+      <div class="gallery-mobile-img">
+        <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=600&h=400&fit=crop&auto=format&q=75" alt="Women's fashion" loading="lazy" />
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       EXPERIENCE
+  ═══════════════════════════════════════ -->
+  <section id="experience" class="experience">
+    <div class="experience-inner">
+
+      <div class="experience-header">
+        <span class="section-label reveal">The Experience</span>
+        <h2 class="reveal reveal--delay-1">Shopping, the <em>Papa Gallo</em> Way</h2>
+      </div>
+
+      <div class="experience-cards">
+
+        <div class="exp-card exp-card--1">
+          <div class="exp-card-icon">
+            <!-- Beer mug -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 3h11a2 2 0 0 1 2 2v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3z"/>
+              <path d="M16 8h3a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-3"/>
+              <path d="M8 3v3M11 3v3"/>
+            </svg>
+          </div>
+          <h3>Beer for the Dads</h3>
+          <p>While the girls find their perfect looks, dads kick back in our cozy chairs with a cold one. Everyone leaves happy.</p>
+        </div>
+
+        <div class="exp-card exp-card--2">
+          <div class="exp-card-icon">
+            <!-- Sparkle / personal attention -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3v3M12 18v3M3 12h3M18 12h3"/>
+              <path d="M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/>
+              <circle cx="12" cy="12" r="4"/>
+            </svg>
+          </div>
+          <h3>Personal Attention</h3>
+          <p>No crowds, no chaos — just one-on-one time with someone who genuinely wants to help you find what you love.</p>
+        </div>
+
+        <div class="exp-card exp-card--3">
+          <div class="exp-card-icon">
+            <!-- Heart -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+          </div>
+          <h3>Lexington's Own</h3>
+          <p>Our customers become friends. That's not a tagline — it's what happens when you genuinely care about your community.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       CLOTHING — WHAT WE CARRY
+  ═══════════════════════════════════════ -->
+  <section id="clothing" class="clothing">
+    <div class="clothing-inner">
+
+      <div class="clothing-header">
+        <span class="section-label reveal">What We Carry</span>
+        <h2 class="reveal reveal--delay-1">Something for <em>Everyone</em></h2>
+        <p class="clothing-note reveal reveal--delay-2">
+          Our inventory changes with the seasons — stop by to see what's new!
+        </p>
+      </div>
+
+      <!-- REPLACE: swap Unsplash URLs for real store photos in images/clothing/ -->
+      <div class="clothing-carousel" id="clothingCarousel">
+        <div class="cc-stage">
+
+          <div class="cc-item">
+            <div class="cc-img c-dresses">
+              <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80&w=400&h=700" alt="Dresses" loading="lazy" onerror="this.style.display='none'">
+            </div>
+            <div class="cc-label">
+              <h3>Dresses</h3>
+              <p>From sundresses to formal gowns — for every occasion</p>
+            </div>
+          </div>
+
+          <div class="cc-item">
+            <div class="cc-img c-casual">
+              <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&q=80&w=400&h=700" alt="Casual Wear" loading="lazy" onerror="this.style.display='none'">
+            </div>
+            <div class="cc-label">
+              <h3>Casual</h3>
+              <p>Effortless everyday looks you'll reach for again and again</p>
+            </div>
+          </div>
+
+          <div class="cc-item">
+            <div class="cc-img c-formal">
+              <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&q=80&w=400&h=700" alt="Formal &amp; Evening" loading="lazy" onerror="this.style.display='none'">
+            </div>
+            <div class="cc-label">
+              <h3>Formal &amp; Evening</h3>
+              <p>When the occasion calls for something truly special</p>
+            </div>
+          </div>
+
+          <div class="cc-item">
+            <div class="cc-img c-accessories">
+              <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=400&h=700" alt="Accessories" loading="lazy" onerror="this.style.display='none'">
+            </div>
+            <div class="cc-label">
+              <h3>Accessories</h3>
+              <p>Jewelry, bags, scarves &amp; all the finishing touches</p>
+            </div>
+          </div>
+
+          <div class="cc-item">
+            <div class="cc-img c-girls">
+              <img src="https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?auto=format&fit=crop&q=80&w=400&h=700" alt="Girls" loading="lazy" onerror="this.style.display='none'">
+            </div>
+            <div class="cc-label">
+              <h3>Girls</h3>
+              <p>Sweet, stylish pieces for the little ones</p>
+            </div>
+          </div>
+
+          <div class="cc-item">
+            <div class="cc-img c-arrivals">
+              <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&q=80&w=400&h=700" alt="New Arrivals" loading="lazy" onerror="this.style.display='none'">
+            </div>
+            <div class="cc-label">
+              <h3>New Arrivals</h3>
+              <p>Always something fresh — we update constantly</p>
+            </div>
+          </div>
+
+        </div><!-- /.cc-stage -->
+
+        <button class="cc-btn cc-btn--prev" aria-label="Previous category">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        <button class="cc-btn cc-btn--next" aria-label="Next category">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+      </div><!-- /.clothing-carousel -->
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       BRANDS
+  ═══════════════════════════════════════ -->
+  <section id="brands" class="brands">
+    <div class="brands-inner">
+
+      <div class="brands-header">
+        <span class="section-label reveal">Our Brands</span>
+        <h2 class="reveal reveal--delay-1">Carefully Curated, <em>Just for You</em></h2>
+        <p class="brands-sub reveal reveal--delay-2">
+          Every brand we carry is chosen with our customers in mind.
+        </p>
+      </div>
+
+      <!--
+        REPLACE: swap "Brand Name" text with real brand names.
+        To use logo images instead, replace each <span class="brand-name">
+        with: <img src="images/brands/brand.png" alt="Brand Name" class="brand-logo">
+        Add brand images to images/brands/ folder.
+      -->
+      <div class="brands-slider reveal">
+        <div class="brands-track" id="brandsTrack">
+          <!-- First set -->
+          <span class="brand-name">Brand Name</span>
+          <span class="brand-sep" aria-hidden="true">✦</span>
+          <span class="brand-name">Brand Name</span>
+          <span class="brand-sep" aria-hidden="true">✦</span>
+          <span class="brand-name">Brand Name</span>
+          <span class="brand-sep" aria-hidden="true">✦</span>
+          <span class="brand-name">Brand Name</span>
+          <span class="brand-sep" aria-hidden="true">✦</span>
+          <span class="brand-name">Brand Name</span>
+          <span class="brand-sep" aria-hidden="true">✦</span>
+          <span class="brand-name">Brand Name</span>
+          <span class="brand-sep" aria-hidden="true">✦</span>
+          <span class="brand-name">Brand Name</span>
+          <span class="brand-sep" aria-hidden="true">✦</span>
+          <span class="brand-name">Brand Name</span>
+          <span class="brand-sep" aria-hidden="true">✦</span>
+          <!-- Duplicate — required for seamless infinite loop -->
+          <span class="brand-name">Brand Name</span>
+          <span class="brand-sep" aria-hidden="true">✦</span>
+          <span class="brand-name">Brand Name</span>
+          <span class="brand-sep" aria-hidden="true">✦</span>
+          <span class="brand-name">Brand Name</span>
+          <span class="brand-sep" aria-hidden="true">✦</span>
+          <span class="brand-name">Brand Name</span>
+          <span class="brand-sep" aria-hidden="true">✦</span>
+          <span class="brand-name">Brand Name</span>
+          <span class="brand-sep" aria-hidden="true">✦</span>
+          <span class="brand-name">Brand Name</span>
+          <span class="brand-sep" aria-hidden="true">✦</span>
+          <span class="brand-name">Brand Name</span>
+          <span class="brand-sep" aria-hidden="true">✦</span>
+          <span class="brand-name">Brand Name</span>
+          <span class="brand-sep" aria-hidden="true">✦</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       TESTIMONIALS
+  ═══════════════════════════════════════ -->
+  <section id="testimonials" class="testimonials">
+    <div class="testimonials-inner">
+
+      <div class="testimonials-header">
+        <span class="section-label reveal">Our Customers</span>
+        <h2 class="reveal reveal--delay-1">Loved by <em>Lexington</em></h2>
+        <p class="testimonials-desc reveal reveal--delay-2">Real stories from the women — and the patient dads — who've made Papa Gallo their favorite stop in the Valley.</p>
+      </div>
+
+      <!-- REPLACE: use real customer quotes, names, locations, and photos -->
+      <div class="testimonials-columns" role="region" aria-label="Customer Testimonials">
+
+        <!-- Column 1 — 20s -->
+        <div class="t-column t-column--1">
+          <ul class="t-track">
+            <li class="testimonial-card">
+              <blockquote>
+                <p class="t-quote">"I've been coming to Papa Gallo for years. It's not just a clothing store — it feels like visiting a friend."</p>
+                <footer class="t-footer">
+                  <img class="t-avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=80&h=80" alt="Jane D." width="40" height="40" loading="lazy" onerror="this.style.display='none'">
+                  <div class="t-info">
+                    <cite class="t-name">Jane D.</cite>
+                    <span class="t-role">Lexington, VA</span>
+                  </div>
+                </footer>
+              </blockquote>
+            </li>
+            <li class="testimonial-card">
+              <blockquote>
+                <p class="t-quote">"My daughter and I always leave with something we love. And yes — my husband loves the chair and the beer."</p>
+                <footer class="t-footer">
+                  <img class="t-avatar" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=80&h=80" alt="Sarah M." width="40" height="40" loading="lazy" onerror="this.style.display='none'">
+                  <div class="t-info">
+                    <cite class="t-name">Sarah M.</cite>
+                    <span class="t-role">Staunton, VA</span>
+                  </div>
+                </footer>
+              </blockquote>
+            </li>
+            <li class="testimonial-card">
+              <blockquote>
+                <p class="t-quote">"The best boutique in the Valley. Every piece is hand-picked and you can feel the care that goes into it."</p>
+                <footer class="t-footer">
+                  <img class="t-avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=80&h=80" alt="Maria L." width="40" height="40" loading="lazy" onerror="this.style.display='none'">
+                  <div class="t-info">
+                    <cite class="t-name">Maria L.</cite>
+                    <span class="t-role">Buena Vista, VA</span>
+                  </div>
+                </footer>
+              </blockquote>
+            </li>
+            <!-- Duplicate for seamless loop -->
+            <li class="testimonial-card" aria-hidden="true">
+              <blockquote>
+                <p class="t-quote">"I've been coming to Papa Gallo for years. It's not just a clothing store — it feels like visiting a friend."</p>
+                <footer class="t-footer">
+                  <img class="t-avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=80&h=80" alt="" width="40" height="40" loading="lazy" onerror="this.style.display='none'">
+                  <div class="t-info">
+                    <cite class="t-name">Jane D.</cite>
+                    <span class="t-role">Lexington, VA</span>
+                  </div>
+                </footer>
+              </blockquote>
+            </li>
+            <li class="testimonial-card" aria-hidden="true">
+              <blockquote>
+                <p class="t-quote">"My daughter and I always leave with something we love. And yes — my husband loves the chair and the beer."</p>
+                <footer class="t-footer">
+                  <img class="t-avatar" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=80&h=80" alt="" width="40" height="40" loading="lazy" onerror="this.style.display='none'">
+                  <div class="t-info">
+                    <cite class="t-name">Sarah M.</cite>
+                    <span class="t-role">Staunton, VA</span>
+                  </div>
+                </footer>
+              </blockquote>
+            </li>
+            <li class="testimonial-card" aria-hidden="true">
+              <blockquote>
+                <p class="t-quote">"The best boutique in the Valley. Every piece is hand-picked and you can feel the care that goes into it."</p>
+                <footer class="t-footer">
+                  <img class="t-avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=80&h=80" alt="" width="40" height="40" loading="lazy" onerror="this.style.display='none'">
+                  <div class="t-info">
+                    <cite class="t-name">Maria L.</cite>
+                    <span class="t-role">Buena Vista, VA</span>
+                  </div>
+                </footer>
+              </blockquote>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 2 — 26s (hidden on mobile) -->
+        <div class="t-column t-column--2">
+          <ul class="t-track">
+            <li class="testimonial-card">
+              <blockquote>
+                <p class="t-quote">"I drove past this place a hundred times before finally walking in. Now I stop by every single season."</p>
+                <footer class="t-footer">
+                  <img class="t-avatar" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=80&h=80" alt="Ashley R." width="40" height="40" loading="lazy" onerror="this.style.display='none'">
+                  <div class="t-info">
+                    <cite class="t-name">Ashley R.</cite>
+                    <span class="t-role">Lexington, VA</span>
+                  </div>
+                </footer>
+              </blockquote>
+            </li>
+            <li class="testimonial-card">
+              <blockquote>
+                <p class="t-quote">"You get real personal attention here. She knows your taste and will pull pieces you'd never have picked yourself."</p>
+                <footer class="t-footer">
+                  <img class="t-avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=80&h=80" alt="Donna K." width="40" height="40" loading="lazy" onerror="this.style.display='none'">
+                  <div class="t-info">
+                    <cite class="t-name">Donna K.</cite>
+                    <span class="t-role">Staunton, VA</span>
+                  </div>
+                </footer>
+              </blockquote>
+            </li>
+            <li class="testimonial-card">
+              <blockquote>
+                <p class="t-quote">"Found my daughter's prom dress here. She cried, I cried — it was perfect. Nowhere else in the Valley comes close."</p>
+                <footer class="t-footer">
+                  <img class="t-avatar" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=80&h=80" alt="Lisa C." width="40" height="40" loading="lazy" onerror="this.style.display='none'">
+                  <div class="t-info">
+                    <cite class="t-name">Lisa C.</cite>
+                    <span class="t-role">Rockbridge County, VA</span>
+                  </div>
+                </footer>
+              </blockquote>
+            </li>
+            <!-- Duplicate for seamless loop -->
+            <li class="testimonial-card" aria-hidden="true">
+              <blockquote>
+                <p class="t-quote">"I drove past this place a hundred times before finally walking in. Now I stop by every single season."</p>
+                <footer class="t-footer">
+                  <img class="t-avatar" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=80&h=80" alt="" width="40" height="40" loading="lazy" onerror="this.style.display='none'">
+                  <div class="t-info">
+                    <cite class="t-name">Ashley R.</cite>
+                    <span class="t-role">Lexington, VA</span>
+                  </div>
+                </footer>
+              </blockquote>
+            </li>
+            <li class="testimonial-card" aria-hidden="true">
+              <blockquote>
+                <p class="t-quote">"You get real personal attention here. She knows your taste and will pull pieces you'd never have picked yourself."</p>
+                <footer class="t-footer">
+                  <img class="t-avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=80&h=80" alt="" width="40" height="40" loading="lazy" onerror="this.style.display='none'">
+                  <div class="t-info">
+                    <cite class="t-name">Donna K.</cite>
+                    <span class="t-role">Staunton, VA</span>
+                  </div>
+                </footer>
+              </blockquote>
+            </li>
+            <li class="testimonial-card" aria-hidden="true">
+              <blockquote>
+                <p class="t-quote">"Found my daughter's prom dress here. She cried, I cried — it was perfect. Nowhere else in the Valley comes close."</p>
+                <footer class="t-footer">
+                  <img class="t-avatar" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=80&h=80" alt="" width="40" height="40" loading="lazy" onerror="this.style.display='none'">
+                  <div class="t-info">
+                    <cite class="t-name">Lisa C.</cite>
+                    <span class="t-role">Rockbridge County, VA</span>
+                  </div>
+                </footer>
+              </blockquote>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 3 — 23s (hidden on tablet and mobile) -->
+        <div class="t-column t-column--3">
+          <ul class="t-track">
+            <li class="testimonial-card">
+              <blockquote>
+                <p class="t-quote">"A loyal customer for years and the quality never disappoints. It's a hidden gem that deserves all the love it gets."</p>
+                <footer class="t-footer">
+                  <img class="t-avatar" src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=80&h=80" alt="Tanya M." width="40" height="40" loading="lazy" onerror="this.style.display='none'">
+                  <div class="t-info">
+                    <cite class="t-name">Tanya M.</cite>
+                    <span class="t-role">Buena Vista, VA</span>
+                  </div>
+                </footer>
+              </blockquote>
+            </li>
+            <li class="testimonial-card">
+              <blockquote>
+                <p class="t-quote">"Mom and I made it our Sunday tradition. Great clothes, great company, and the coziest little corner of Lexington."</p>
+                <footer class="t-footer">
+                  <img class="t-avatar" src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=80&h=80" alt="Grace W." width="40" height="40" loading="lazy" onerror="this.style.display='none'">
+                  <div class="t-info">
+                    <cite class="t-name">Grace W.</cite>
+                    <span class="t-role">Lexington, VA</span>
+                  </div>
+                </footer>
+              </blockquote>
+            </li>
+            <li class="testimonial-card">
+              <blockquote>
+                <p class="t-quote">"Warm, welcoming, and always something beautiful to discover. This is what boutique shopping should feel like everywhere."</p>
+                <footer class="t-footer">
+                  <img class="t-avatar" src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&q=80&w=80&h=80" alt="Beth F." width="40" height="40" loading="lazy" onerror="this.style.display='none'">
+                  <div class="t-info">
+                    <cite class="t-name">Beth F.</cite>
+                    <span class="t-role">Natural Bridge, VA</span>
+                  </div>
+                </footer>
+              </blockquote>
+            </li>
+            <!-- Duplicate for seamless loop -->
+            <li class="testimonial-card" aria-hidden="true">
+              <blockquote>
+                <p class="t-quote">"A loyal customer for years and the quality never disappoints. It's a hidden gem that deserves all the love it gets."</p>
+                <footer class="t-footer">
+                  <img class="t-avatar" src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=80&h=80" alt="" width="40" height="40" loading="lazy" onerror="this.style.display='none'">
+                  <div class="t-info">
+                    <cite class="t-name">Tanya M.</cite>
+                    <span class="t-role">Buena Vista, VA</span>
+                  </div>
+                </footer>
+              </blockquote>
+            </li>
+            <li class="testimonial-card" aria-hidden="true">
+              <blockquote>
+                <p class="t-quote">"Mom and I made it our Sunday tradition. Great clothes, great company, and the coziest little corner of Lexington."</p>
+                <footer class="t-footer">
+                  <img class="t-avatar" src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=80&h=80" alt="" width="40" height="40" loading="lazy" onerror="this.style.display='none'">
+                  <div class="t-info">
+                    <cite class="t-name">Grace W.</cite>
+                    <span class="t-role">Lexington, VA</span>
+                  </div>
+                </footer>
+              </blockquote>
+            </li>
+            <li class="testimonial-card" aria-hidden="true">
+              <blockquote>
+                <p class="t-quote">"Warm, welcoming, and always something beautiful to discover. This is what boutique shopping should feel like everywhere."</p>
+                <footer class="t-footer">
+                  <img class="t-avatar" src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&q=80&w=80&h=80" alt="" width="40" height="40" loading="lazy" onerror="this.style.display='none'">
+                  <div class="t-info">
+                    <cite class="t-name">Beth F.</cite>
+                    <span class="t-role">Natural Bridge, VA</span>
+                  </div>
+                </footer>
+              </blockquote>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       FOOTER — VISIT US
+  ═══════════════════════════════════════ -->
+  <footer id="visit" class="footer">
+    <div class="footer-watermark" aria-hidden="true">Papa Gallo</div>
+
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <img src="images/logo/papagallo-logo.jpeg" alt="Papa Gallo Boutique" class="footer-logo" />
+        <p class="footer-tagline">Your boutique in the heart of Lexington.</p>
+      </div>
+
+      <div class="footer-info">
+        <h4>Find Us</h4>
+        <!-- REPLACE: real address -->
+        <address>
+          [Street Address]<br />
+          Lexington, Virginia [ZIP]
+        </address>
+        <div class="footer-hours">
+          <h4>Hours</h4>
+          <!-- REPLACE: real hours -->
+          <p>Monday – Saturday: 10am – 6pm</p>
+          <p>Sunday: Closed</p>
+        </div>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Get in Touch</h4>
+        <!-- REPLACE: real phone & email -->
+        <p><a href="tel:+15401234567">(540) 123-4567</a></p>
+        <p><a href="mailto:hello@papagalloboutique.com">hello@papagalloboutique.com</a></p>
+
+        <div class="footer-social">
+          <h4>Follow Along</h4>
+          <div class="social-links-col">
+
+            <!-- REPLACE: real social URLs -->
+            <a href="https://instagram.com/papagalloboutique" target="_blank" rel="noopener" class="social-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                <circle cx="12" cy="12" r="5"/>
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+              </svg>
+              Instagram
+            </a>
+
+            <a href="https://facebook.com/papagalloboutique" target="_blank" rel="noopener" class="social-pill">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+              Facebook
+            </a>
+
+            <a href="https://tiktok.com/@papagalloboutique" target="_blank" rel="noopener" class="social-pill">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.91a8.17 8.17 0 0 0 4.77 1.52V7a4.85 4.85 0 0 1-1-0.31z"/>
+              </svg>
+              TikTok
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Papa Gallo Boutique &nbsp;·&nbsp; Lexington, Virginia &nbsp;·&nbsp; All rights reserved</p>
+    </div>
+  </footer>
+
+
+  <script src="js/main.js"></script>
+</body>
+</html>
