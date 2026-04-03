@@ -330,27 +330,31 @@ h4 {
   animation: fadeUp 0.9s 0.15s both;
 }
 
-.hero-title { display: block; margin-bottom: 1.4rem; }
+.hero-title {
+  display: block;
+  margin-bottom: 1.4rem;
+  line-height: 0.9;
+}
 
+/* Both spans inline at the same size — reads as one continuous word.
+   Weight + colour contrast gives visual interest without a seam. */
 .hero-title-top {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(3.2rem, 7.8vw, 8rem);
+  font-size: clamp(3.5rem, 8.5vw, 8.5rem);
   font-weight: 300;
-  font-style: italic;
-  letter-spacing: 0.01em;
-  color: var(--wine);
+  color: var(--dark);
   display: inline;
+  letter-spacing: -0.01em;
   animation: fadeUp 0.9s 0.3s both;
 }
 
 .hero-title-main {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(3.2rem, 7.8vw, 8rem);
-  font-weight: 600;
-  line-height: 0.88;
-  color: var(--dark);
+  font-size: clamp(3.5rem, 8.5vw, 8.5rem);
+  font-weight: 700;
+  color: var(--wine);
   display: inline;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
   animation: fadeUp 0.9s 0.3s both;
 }
 
@@ -1269,6 +1273,7 @@ h4 {
   /* Hero */
   .hero-image { display: none; }
   .hero-scroll { display: none; }
+  .hero-title-top,
   .hero-title-main { font-size: clamp(2.2rem, 10.5vw, 4.5rem); }
 
   /* Sections */
