@@ -345,13 +345,13 @@ h4 {
 
 .hero-title-main {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(5rem, 15.5vw, 15.5rem);
+  font-size: clamp(3.2rem, 7.8vw, 8rem);
   font-weight: 600;
   line-height: 0.88;
   color: var(--dark);
   display: block;
   letter-spacing: -0.02em;
-  animation: fadeUp 0.9s 0.42s both;
+  animation: fadeUp 0.9s 0.3s both;
 }
 
 .hero-tagline {
@@ -936,11 +936,11 @@ h4 {
 
 /* Logo image mode — used when brand logos are available */
 .brand-logo {
-  height: clamp(2.4rem, 4vw, 3.6rem);
+  height: clamp(3.5rem, 6vw, 6rem);
   width: auto;
-  max-width: 160px;
+  max-width: 220px;
   object-fit: contain;
-  opacity: 0.65;
+  opacity: 0.7;
   filter: grayscale(1);
   transition: opacity 0.3s ease, filter 0.3s ease;
   flex-shrink: 0;
@@ -1261,7 +1261,7 @@ h4 {
   /* Hero */
   .hero-image { display: none; }
   .hero-scroll { display: none; }
-  .hero-title-main { font-size: clamp(4.5rem, 20vw, 7rem); }
+  .hero-title-main { font-size: clamp(2.2rem, 10.5vw, 4.5rem); }
 
   /* Sections */
   .about-container {
