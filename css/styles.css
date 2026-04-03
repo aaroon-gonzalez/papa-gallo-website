@@ -302,7 +302,8 @@ h4 {
     radial-gradient(ellipse at 22% 28%, rgba(240, 217, 196, 0.9) 0%, transparent 52%),
     radial-gradient(ellipse at 78% 78%, rgba(212, 165, 165, 0.7) 0%, transparent 44%),
     radial-gradient(ellipse at 58% 8%,  rgba(232, 208, 187, 0.6) 0%, transparent 48%),
-    radial-gradient(ellipse at 90% 30%, rgba(196, 151, 62,  0.12) 0%, transparent 40%);
+    radial-gradient(ellipse at 90% 30%, rgba(196, 151, 62,  0.12) 0%, transparent 40%),
+    radial-gradient(ellipse at 5%  88%, rgba(139, 38,  53,  0.09) 0%, transparent 46%);
   background-color: var(--cream);
   z-index: 0;
 }
@@ -333,13 +334,12 @@ h4 {
 
 .hero-title-top {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(2.8rem, 6.5vw, 7rem);
+  font-size: clamp(3.2rem, 7.8vw, 8rem);
   font-weight: 300;
   font-style: italic;
-  letter-spacing: 0.38em;
+  letter-spacing: 0.01em;
   color: var(--wine);
-  display: block;
-  margin-left: 0.12em;
+  display: inline;
   animation: fadeUp 0.9s 0.3s both;
 }
 
@@ -349,9 +349,17 @@ h4 {
   font-weight: 600;
   line-height: 0.88;
   color: var(--dark);
-  display: block;
+  display: inline;
   letter-spacing: -0.02em;
   animation: fadeUp 0.9s 0.3s both;
+}
+
+.hero-deco-line {
+  width: 2.5rem;
+  height: 1.5px;
+  background: var(--wine);
+  margin-bottom: 1.2rem;
+  animation: fadeUp 0.9s 0.05s both;
 }
 
 .hero-tagline {
